@@ -66,15 +66,15 @@ object ListHandler {
   }
 
   @tailrec
-  def zipWithBase[A](acc: List[A], list1: List[A], list2: List[A])(function: (A, A) => A): List[A] = {
+  def zipWithRec[A](acc: List[A], list1: List[A], list2: List[A])(function: (A, A) => A): List[A] = {
     (list1, list2) match {
       case (Nil, Nil) => acc
-      case (x :: tail1, y :: tail2) => zipWithBase(acc.::(function(x, y)), tail1, tail2)(function)
+      case (x :: tail1, y :: tail2) => zipWithRec(acc.::(function(x, y)), tail1, tail2)(function)
     }
   }
 
   def zipWith[A](list1: List[A], list2: List[A])(function: (A, A) => A): List[A] = {
-    zipWithBase(List[A](), list1, list2)(function).reverse
+    zipWithRec(List[A](), list1, list2)(function).reverse
   }
 
   def main(args: Array[String]): Unit = {
