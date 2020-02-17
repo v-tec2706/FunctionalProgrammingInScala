@@ -1,4 +1,4 @@
-package main.excercise4
+package main.chapter4
 
 sealed trait Option[+A] {
   def map[B](f: A => B): Option[B]

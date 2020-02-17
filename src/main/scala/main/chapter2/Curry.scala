@@ -1,4 +1,4 @@
-package main.excercise2
+package main.chapter2
 
 object Curry {
   def main(args: Array[String]): Unit = {

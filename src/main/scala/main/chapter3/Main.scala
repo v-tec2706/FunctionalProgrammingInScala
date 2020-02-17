@@ -1,7 +1,7 @@
-package main.excercise3
+package main.chapter3
 
-import main.excercise3.ListHandler._
-import main.excercise3.Tree.{map, maximum, size}
+import main.chapter3.ListHandler._
+import main.chapter3.Tree.{map, maximum, size}
 
 object Main {
   def main(args: Array[String]): Unit = {

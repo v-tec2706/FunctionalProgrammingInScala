@@ -1,4 +1,4 @@
-package main.excercise4
+package main.chapter4
 
 object Main {
 

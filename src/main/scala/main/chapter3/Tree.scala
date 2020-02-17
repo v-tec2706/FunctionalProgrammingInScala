@@ -1,4 +1,4 @@
-package main.excercise3
+package main.chapter3
 
 sealed trait Tree[+A]
 
