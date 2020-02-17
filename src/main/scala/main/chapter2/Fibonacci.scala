@@ -16,8 +16,4 @@ object Fibonacci {
       case _ => fib(0, 1, 2, n)
     }
   }
-
-  def main(args: Array[String]): Unit = {
-    print(takeNth(358))
-  }
 }
